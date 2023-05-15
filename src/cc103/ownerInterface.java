@@ -55,28 +55,67 @@ public class ownerInterface extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jPanel7 = new javax.swing.JPanel();
+        btnView = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         orderedTable = new javax.swing.JTable();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        btnView = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        btnView.setBackground(new java.awt.Color(246, 211, 115));
+        btnView.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
+        btnView.setText("VIEW");
+        btnView.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnViewActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 190, 190, -1));
+
+        jButton2.setBackground(new java.awt.Color(246, 211, 115));
+        jButton2.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
+        jButton2.setText("DELETE");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 190, 190, -1));
+
+        jButton1.setBackground(new java.awt.Color(246, 211, 115));
+        jButton1.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
+        jButton1.setText("CLEAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 190, 190, -1));
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("ORDERED ITEMS");
-        jPanel7.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(429, 14, -1, 69));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 30, -1, 69));
 
         orderedTable.setBackground(new java.awt.Color(246, 211, 115));
         orderedTable.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         orderedTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
                 {null, null, null, null},
@@ -98,48 +137,11 @@ public class ownerInterface extends javax.swing.JFrame {
         orderedTable.setToolTipText("");
         jScrollPane1.setViewportView(orderedTable);
 
-        jPanel7.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 160, 979, 504));
+        getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, 910, 270));
 
-        jButton1.setBackground(new java.awt.Color(246, 211, 115));
-        jButton1.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
-        jButton1.setText("CLEAR");
-        jPanel7.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(357, 125, 128, -1));
-
-        jButton2.setBackground(new java.awt.Color(246, 211, 115));
-        jButton2.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
-        jButton2.setText("DELETE");
-        jPanel7.add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(781, 125, 198, -1));
-
-        btnView.setBackground(new java.awt.Color(246, 211, 115));
-        btnView.setFont(new java.awt.Font("SansSerif", 3, 12)); // NOI18N
-        btnView.setText("VIEW");
-        btnView.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnViewActionPerformed(evt);
-            }
-        });
-        jPanel7.add(btnView, new org.netbeans.lib.awtextra.AbsoluteConstraints(56, 125, 145, -1));
-
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cc103/Final Background.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/cc103/bacground.png"))); // NOI18N
         jLabel2.setText("jLabel2");
-        jPanel7.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 1010, 690));
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -160,6 +162,30 @@ public class ownerInterface extends javax.swing.JFrame {
             System.out.println("Error : " + ex.getMessage());
         }
     }//GEN-LAST:event_btnViewActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+            DefaultTableModel model = (DefaultTableModel)orderedTable.getModel();
+            model.setRowCount(0);
+            model.setRowCount(16);
+
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        DefaultTableModel tblModel = (DefaultTableModel) orderedTable.getModel();
+        
+        if(orderedTable.getSelectedRowCount()==1){
+            tblModel.removeRow(orderedTable.getSelectedRow());
+        }else{
+            if(orderedTable.getSelectedRowCount()==0){
+                JOptionPane.showMessageDialog(this, "Table is Empty.");
+            }else{
+                 JOptionPane.showMessageDialog(this, "Select Single Row.");
+            }
+                
+            
+        }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -202,7 +228,6 @@ public class ownerInterface extends javax.swing.JFrame {
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JPanel jPanel7;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable orderedTable;
     // End of variables declaration//GEN-END:variables

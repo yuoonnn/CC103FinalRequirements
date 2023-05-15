@@ -338,7 +338,7 @@ public class Front extends javax.swing.JFrame {
         btnSize.add(hawaiianRad);
         hawaiianRad.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
         hawaiianRad.setForeground(new java.awt.Color(0, 0, 0));
-        hawaiianRad.setText("HAWAIIAN ");
+        hawaiianRad.setText("HAWAIIAN");
         hawaiianRad.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 hawaiianRadActionPerformed(evt);
